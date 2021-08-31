@@ -1,0 +1,62 @@
+SCRUM
+
+PILARES - a TIA do scrum Transparência Inspeção e Adaptação
+
+
+Product Backlog = Gera os PBI Prduct Backlog Itens queé uma lista do que precisa ser feito para o produto ser construido
+
+Sprint PLanning = Um reunião, uma cerimonia para apresentar para o time o backlog do PO
+
+Sprint backlog = Que é um pedaçõ que o time pega do Product backlog
+
+Sprint review = Depois de ou 4 semanas é feito uma reunião pra saber se ta tudo certo. O PO participa.
+
+
+
+Papéis - Cerimônias - Artefatos
+
+Papéis: 
+	- Product Owner: PO que é responsável pelo negócio (Tem que saber o toto, qual as telas, qual a plataforma, como vai ser a entrega...)
+	- Scrum Master: Responsável por tirar todos os impedimentos do time
+	- Time: Time de desenvolvimento (Front, back, UX)
+	
+Cerimônias (Reuniões)
+	- Planejamento da Sprint: Planejamento o que vai acontecer nas próximas semanas
+	- Reunião diária: Daily - 15 min
+	- Revisãoda sprint: No fincal das semanas, tem essa reunião para entregas.
+	- Retrospectiva da sprint: todo time se reune pra dizer o que houve de positivo e negativo
+	
+Artefatos
+	- Product Backlog: A lista de todos os trabalhos que precisam ser realizados dentro de um mesmo projeto. Eses substituem os requisitos tradicionais. É de responsabilidade do PO.
+	
+	- Sprint Backlog: É uma lista de tarefas que o scrum team se compromete a fazer em um sprint. Os itens do sprint backlog são extraídos do product backlog, pela equipe, com base nas prioridades definidas pelo Po e a percepção da equipe sobre o tempo que será necessário para completar as várias funcionalidades.
+	
+	- Gráfico Burndown: é o gráfico utilizado pelas equipes scrum para representar diariamente o progresso do trabalho em desenvolvimento. Ou seja, após cada dia de trabalh o gráfico apreenta a porção de trabalho finalizada em comparação com o trabalho total planejado.
+	
+
+	----------x ----------------
+
+	
+OBS:	
+	Na Sprint Planning:
+	
+	DOR - Definition of ready (Definição de preparado): Só aceitaremos um item na reunião de sprint planning se estiver: trabalhado em sessões de refinamento do product backlog; Estimado; Pequeno o sucifiente; com critérios de aceitação definidos. É importante pra o desenvolvedor não pegar uma funcionalidade pra desenvolver, que seja vaga. 
+	
+	DOD - Definition of Done (Definição de pronto): Uma lista de regras que o desenvolvedor tem que seguir para definir o item como pronto. Ex: somente consideraremos o incremento do produto "pronto" se estiver: Codificado; passando nos testes unitários; passando nos testes de aceitação; integrado ao sistema XPTO; com manual do usuário atualizado;
+	
+	
+	Review da Sprint
+	
+	PO,Scrum team, scrum master, Stake holders -> Todos podem participar.
+	
+	
+	OBS:
+	
+	Ciclo PDCA: PLAN, DO, CHECK, ACT
+	
+	
+	
+	
+		- 
+	
+	

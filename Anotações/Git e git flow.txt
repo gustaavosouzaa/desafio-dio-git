@@ -1,0 +1,86 @@
+Git e git flow
+
+Git flow você trabalha com várias branchs
+
+Primeiramente vai no diretório que você quer usar o git flow e preenche
+
+git flow init
+
+após isso ele vai perguntar se deseja criar usar algumas branchs, vai apertando enter pra aceitar 
+
+
+git branch lista as branchs que existem (no momento develop e master)
+
+para trabalhar, a gente cria uma branch separada
+
+git flow feature start [NAME]
+ex: git flow feature start sum
+
+faz o que precisa e depois dá um:
+git flow feature finish sum  (ao dar o finish ele volta pra branch developer e automaticamnte exclui a branch temporaria sum)
+
+
+depois que tá em develop, se quiser mandar pra realease, é só fazer:
+
+git flow release start 0.1.0 (startando a branch release)
+
+pra mandar pra master, prieiro encerra o release com git flow release finish 0.1.0 ai ele abre uma tela pra você incluir uma mensagem, você inclue e aperta ctrl+c depois :wq
+
+nesse momento suas alterações já eestão na branch master e ai é só da um git push
+
+
+para criar uma hotfix é git flow hotfix start 1.01 (hotfix é uma branch associada a master, pois é pra corrigir erros que já estão em produção)
+pra encerrar é git flow hotfix finish 1.0.1h2
+
+OBS GIT: 
+git init para que ja crie a branch master
+git add .  -> pra adicionar
+git commit -m 'Adiciona funcionalidade soma' -> prara comitar
+git push ->  pra jogar todo commit local pra o git (pra não dar conflito, dá o git pull antes do push)
+
+git status para ver o que tem de modificações
+git branch pra visualizar as branchs
+git checkout [Nome Da Branch] -> Para mudar de branch ou pra criar local
+
+git log é pra ver os commits
+
+git restore --staged [NOME DO ARQUIVO]  serve pra quando você der o add mas quer desfazer, ele volta o arquivo para o status de modificado
+
+git checkout -b develop  -> Cria ma nova branch a partir da branch que vocÊ está
+
+git checkout master -> para mudar para branch master
+
+git merge [NOME DA BRANCH] -> quando você faz uma modificação em uma branch e você quer passar pra outra, você dá esse comando com a branch das moficações. Ex: Estou na branch develop e fiz alterações, se eu quiser jogar as alterações pra master, eu primeiro dou um git checkout master pra ir pra branch de master e lá na master euy dou um git merge develop
+
+
+Pra clonar um repositorio remoto (github) para local(seu pc),só dar um 
+git clone [http que pega lá no site]
+
+
+git push pra enviar todas as modificações local para remoto
+
+
+em um ambiente novo, caso no github tenha a branch developer, você vai ter que criar a branch develop local com o código:
+'git checkout -b develop'  e em seguida vai dar um git pull trazendo do origin 'git pull origin develop'
+ 
+ ------------------------------------------------------------ x -----------------------------------------------------------
+ 
+ git add (serve pra direcionar os arquivos que serão commitados)
+
+git commit (serve para designar a descrição e com os arquivos que foram adicionados no git add)
+
+git push <nomedabranch> (concretiza o commit
+
+git pull (atualiza seu ambiente conforme a branch selecionada)
+
+git branch (ve a branch que voce está)
+
+git status (ve se tem algo a ser commitado na fila e os arquivos que estão sendo modificados caso há modificação)
+
+git checkout <nomedabranch> (troca a branch que voce está)
+
+git checkout -b <nomedabranch> (criar uma nova branch)
+
+git stash (joga pra uma fila algo que voce não quer mais usar no momento)
+
+git stash apply (volta da fila o que voce teoricamente descartou)

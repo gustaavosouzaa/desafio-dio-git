@@ -1,0 +1,30 @@
+200 OK
+201 created
+204 no content
+400 bad request -> Dados enviados, são invalidos.
+401 Unauthorized -> Não tá autenticado
+404 not found -> Quando não encontra o site
+500 internal server error -> O ideal é não enviar o erro 500, porque siginifica que vc não tratou.
+
+
+
+as rotas o nome do controller tem que ser no plural
+
+singleton é utilizada uma instância por execução da aplicação. O Scoped é por requisição e no transient é por classe e requisição
+O transient não é muito utilizado
+
+ORM - Ferramenta que vai permitir você converter seu modelo de dados, para mapear uma tabela de banco de dados.
+
+Entity FRamework core é a versão multiplataforma do ORM Entity framework
+
+DbContext - Uma classe que vai mapear o que tá no código para o banco. 
+
+Dbset - representa uma tabela do banco de dados
+
+Migration - é o código que representa alterações do nosso código para o banco de dados.
+
+
+Dapper - Perfomática e simples, de fácil adoção em projetos, mesmo que já utilizem o EF Core. Através de métodos de extensão IDbConnection (Como na classe SQL Connection). É Possível realizar consultas SQL diretamente, como insert, delete, update, stored procedures, entre outros.
+
+
+

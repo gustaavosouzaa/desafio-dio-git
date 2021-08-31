@@ -1,0 +1,7 @@
+ESTRICT: Rejeita a atualização ou exclusão de um registro da tabela pai, se houver registros na tabela filha.
+
+CASCADE: Atualiza ou exclui os registros da tabela filha automaticamente, ao atualizar ou excluir um registro da tabela pai.
+
+SET NULL: Define como null o valor do campo na tabela filha, ao atualizar ou excluir o registro da tabela pai.
+
+NO ACTION: Equivalente ao RESTRICT.

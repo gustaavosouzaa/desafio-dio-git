@@ -1,0 +1,31 @@
+docker container ls  - lista todos os containers
+docker container ls -a - lista todos os containers que estão rodando
+docker container stop {id} - para um container
+docker image pull {image} - baixa a imagem mas n cria container 
+
+run - cria o container
+--name - coloca o nome
+-p 8080:80 expoe a porta, lembrando que a primeira é a que vc quer rodar e a da direita é a porta da imagem
+-d - executa container em segundo plano 
+-i - modo interativo, ou seja, não trava a tela enquanto roda. 
+-t - abre o terminal
+a - attach
+ex:
+docker container run --name teste -p 8080:80 -d ngin
+
+-v - mapeamento de diretorio
+
+$(pwd)/html - pasta do host (pwd é a pasta que vc ta rodando o comando. A partir dela que ele vai procurar a pasta html)
+/usr/share/nginx/html - pasta do container que eu quero mapear
+
+(pwd)/html:/usr/share/nginx/html
+
+ex: docker container run --name ws3 -p 8080:80 -vb $(pwd)/html:/usr/share/nginx/html -d nginx
+
+docker container inspect {idcontainer} - Tem todas as informações do container, se vc for em mounts, vc vai ver o mapeamento de pasta que foi feito
+
+para voltar para um container que estava rodando no modo interativo
+docker container start -ia {id ou nome container}
+
+docker container prune limpa todos os containers
+docker image rm $(docker image ls -a -q) apaga todas as imagens
